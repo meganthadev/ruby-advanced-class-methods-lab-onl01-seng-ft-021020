@@ -68,6 +68,7 @@ def self.find_by_name(name)
     song
   end
 
-
-
+  def self.destroy_all()
+    @@all.clear
+  end  
 end
