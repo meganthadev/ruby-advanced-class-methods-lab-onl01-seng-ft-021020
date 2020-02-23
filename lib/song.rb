@@ -47,9 +47,7 @@ def self.find_by_name(name)
   
 
   def self.alphabetical
-
     @@all.sort_by{|song| song.name}
-
   end
 
   def self.new_from_filename(filename)
@@ -69,5 +67,7 @@ def self.find_by_name(name)
     song.save
     song
   end
+
+
 
 end
